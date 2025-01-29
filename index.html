@@ -83,7 +83,7 @@
 		var zdbf = document.getElementById("zdbf");
 		var qhjk = document.getElementById("qhjk");
 		xiayiwei.addEventListener("click",function(){
-			myVideo.src = "http://api.yujn.cn/api/rewu.php?type=video&_t=" + Math.random();
+			myVideo.src = "http://api.qemao.com/api/douyin" + Math.random();
 			myVideo.play();
 		}
 			
@@ -94,13 +94,13 @@
 			zdbf.innerHTML="自动: 开";
 			if (kk % 2 == 0 ){
 			myVideo.addEventListener("ended", function() {
-			myVideo.src = "http://api.yujn.cn/api/rewu.php?type=video&_t=" + Math.random();
+			myVideo.src = "http://api.qemao.com/api/douyin" + Math.random();
 			myVideo.play();
 			});
 		}else{
 			zdbf.innerHTML="自动: 关";
 			myVideo.addEventListener("ended", function() {
-			myVideo.src = "http://api.yujn.cn/api/rewu.php?type=video&_t=" + Math.random();
+			myVideo.src = "http://api.qemao.com/api/douyin + Math.random();
 			myVideo.paused;
 			});
 		}
